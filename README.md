@@ -3,4 +3,5 @@ Atividades sobre css grid
 
 o que estou aprendendo:
  - Grid layout
- - Tamplete grid 
+ - Tamplete grid
+ - grid Area
