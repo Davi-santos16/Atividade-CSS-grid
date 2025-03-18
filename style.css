@@ -1,0 +1,160 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color: rgba(150, 149, 148, 0.75);
+}
+.container-grid{
+    display: grid;
+}
+nav{
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    align-items: center;
+    background-color: rgb(193, 150, 97);
+}
+.logo h6{
+    font-size: 200%;
+}
+nav a {
+    list-style: none;
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    font-size: 150%;
+}
+nav a.nav-menu{
+    display: none;
+    color: black;
+    cursor: pointer;
+    grid-column: 5;
+}
+.container1{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 100px;
+    padding: 20px; 
+}
+div img{
+    width: 100%;
+    height: 100%;
+}
+p{
+    color: black;
+}
+.container2{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fill);
+    gap: 10px;  
+    margin-top: 35px;
+    padding: 20px;
+}
+.container2 div{
+    min-height: 100px;
+    background-color: rgb(146, 151, 151);
+    margin: 20px;
+}
+.item{
+    width: 50%;
+}
+.container2 .banner{
+    grid-column: 3/4;
+    grid-row: 1/4;
+    height: 500px;
+    border: solid black 5px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background-color: black;  
+}
+.footer p{
+    color: white;
+    margin-left:20px ;
+    margin-top: 20px;  
+}
+.nav-mobile{
+    display: none;
+}
+div.modal{
+    display: none;
+}
+@media screen and (max-width: 431px) {
+    nav a.nav-menu{
+        display: block;
+    }
+    nav a{
+        display: none;
+    }
+    div.modal{
+        display: grid;
+        color: black;
+        font-size: 150%;
+        text-align: center;
+        align-content: center;
+        row-gap: 5%;
+        position: fixed;
+        background-color: rgba(0, 0,0,0.6);
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        opacity: 0;
+        pointer-events: none;
+    }
+    div.modal a{
+        text-decoration: none;
+        list-style: none;
+        color: white;
+        font-size: 150%;
+    }
+    div.modal:target{
+        opacity: 1;
+        pointer-events: auto;
+    }
+    a#fechar{
+        
+        color: red;
+        
+    }
+
+
+   .container1{
+    grid-template-columns:repeat(auto-fill, minmax(430px, 3fr));
+    gap: 0px; 
+   }
+   .container1  .bloco{
+    margin-top: 25px;
+    width: 400px;
+   }
+   .container2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 20px;
+    padding: 0%;  
+   }
+   .container2 .item{
+    width: 150px;
+    margin-left: 30px;
+   }
+   .container2 .banner{
+    height: 300px;
+    width: 350px;
+    grid-column: 1/3;
+    grid-row: 8;
+    
+   }
+   .footer{
+    display: grid;
+    grid-template-columns:  1fr;
+    grid-template-rows:  1fr;
+   }
+   .footer p{
+    font-size: 15px;
+   }
+}
