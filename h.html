@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            background-color: rgb(151, 151, 220);
+            height: 200px;
+            width: 400px;
+
+
+        } 
+        .box1{
+            grid-column-start:6;
+            grid-column-end: 6;
+            grid-row-start: 3;
+            grid-row-end: 7;
+            background-color: brown;
+            
+        }
+        .box4{
+            background-color: red;
+            grid-row-start: 3;
+            grid-row-end: 5;
+           
+            grid-column-start:2;
+            z-index: 6;
+        }
+        
+            
+        
+        .box6, .box8{
+            background-color: aqua;
+        }
+        .box8{
+            
+            grid-row-start: 1;
+            grid-column-start:6 ;
+            grid-column-end: 8;
+            
+        }
+
+        .box2{
+            background-color: beige;
+            grid-column-start: 0;
+            grid-row-start: 3;
+            grid-row-end: 7;
+            
+        }
+        .box3{
+            background-color: rgb(180, 100, 100);
+            grid-column-start: 1;
+            grid-column-end: 6;
+            grid-row-start: 1;
+            grid-row-end:7;
+            z-index: 1;
+        }
+       
+        
+        .box6{
+            grid-column-start: 4;
+            grid-row-start: 3;
+           
+        }
+        .box5{
+            grid-column-start: 4;
+            grid-row-start: 3;
+            grid-row-end:5 ;
+            z-index: 5;
+            background-color: red;
+        }
+
+       
+
+        
+    </style>
+   
+</head>
+<body>
+    <div class="container">
+        <div class="box1">a</div>
+        <div class="box2">b</div>
+        <div class="box3">c</div>
+        <div class="box4">d</div>
+        <div class="box5">e</div>
+        <div class="box6">f</div>
+        <div class="box7">g</div>
+        <div class="box8">h</div>
+      </div>
+</body>
+</html>
